@@ -1,0 +1,25 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "blog with node js",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "node app.js"
+  },
+  "author": "mervydevmedia",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dompurify": "^2.2.6",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "jsdom": "^16.4.0",
+    "marked": "^1.2.7",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.7",
+    "override": "0.0.1",
+    "slugify": "^1.4.6"
+  }
+}

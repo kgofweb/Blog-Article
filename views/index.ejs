@@ -1,0 +1,25 @@
+<!-- New articles -->
+<a href="/articles/new" class="btn btn-success"><i class="fas fa-pen"></i> New articles</a>
+
+<!-- Articles -->
+<% articles.forEach(article => { %>
+   <div class="card mt-4 mb-4">
+      <div class="card-body">
+         <h3 class="card-title mb-3"> <%= article.title %> </h3>
+         <div class="card-subtitle text-muted">
+            <p> <%= article.createdDate.toLocaleDateString() %> </p>
+         </div>
+         <div class="card-text mb-3">
+            <p> <%= article.description %> </p>
+            <!-- Read more btn -->
+            <a href="articles/<%= article.slug %>" class="btn btn-outline-primary btn-sm">Read More</a>
+            <!-- Edit btn -->
+            <a href="articles/edit/<%= article.id %>" class="btn btn-outline-warning btn-sm">Edit</a>
+            <!-- Delete btn -->
+            <form action="/articles/<%= article.id %>?_method=DELETE" method="POST" class="d-inline">
+               <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>
+            </form>
+         </div>
+      </div>
+   </div>
+<% }) %>
