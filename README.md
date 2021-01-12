@@ -20,3 +20,8 @@ Second
        
        create a model folder for Schema
 
+
+Run server 
+       
+       npm start
+       localhost:5000 or 8000 or 3000
