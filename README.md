@@ -4,7 +4,7 @@ Build blog article with Nde JS (Backend App).
 
 Here I'm build a Simple blog article with Node JS.
 
-First we need to init a server called
+First we need to init a server
 
        app.js or
        
