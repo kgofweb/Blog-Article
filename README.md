@@ -20,4 +20,3 @@ Second
        
        create a model folder for Schema
 
-
